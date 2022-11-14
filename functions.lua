@@ -77,7 +77,7 @@ function htmlLua.Title(s, class)
 end
 
 function htmlLua.subTitle(s, class)
-    return class and "    <div class=\"subtitle " .. class .. "\">\n        " .. s .. "\n    </div>\n" or "    <div class=\"subtitle\">" .. s .. "</div>\n"
+    return class == "example" and "    <div class=\"subtitle " .. class .. "\">\n        " .. s .. "\n        <div class=\"terminal\"></div>\n    </div>\n" or class and "    <div class=\"subtitle " .. class .. "\">\n        " .. s .. "\n    </div>\n" or "    <div class=\"subtitle\">" .. s .. "</div>\n"
 end
 
 function htmlLua.list(s, class)

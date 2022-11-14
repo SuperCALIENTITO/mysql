@@ -15,6 +15,7 @@
 * {
 	font-family: 'OswaldAlt', Oswald, sans-serif;
 	font-weight: 32;
+    font-size: large;
 	color: white;
 	cursor: default;
 }
@@ -55,15 +56,29 @@ body {
 }
 
 .subtitle {
-    font-size: large;
+    font-size: 24px;
 }
 
 .example {
     background-color: var(--console1);
-    border-radius: 2px;
+    border-radius: 4px;
+    font-size: 20px;
 
-    padding: 0.2em;
+    margin-top: 2em;
+    margin-bottom: 0.4em;
+    padding: 0.3em;
     font-family: "Courier New";
+}
+
+.terminal {
+    width: 12px;
+    height: 2px;
+    background-color: #E6E6E6;
+
+    animation: 0.9s blink linear infinite;
+
+    position: relative;
+    right: calc(100% * -1 + 0.7em);
 }
 
 .line {
@@ -106,3 +121,22 @@ body {
       width: calc(100% - 8em);
     }
   }
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    49% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
