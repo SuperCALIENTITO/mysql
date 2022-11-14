@@ -30,6 +30,11 @@ body {
 	background-size: 100% 100%;
 }
 
+a {
+    font-style: normal;
+    font-size: x-large;
+}
+
 .title {
 	background-color: var(--bgr1);
 

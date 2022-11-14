@@ -2,7 +2,9 @@ return {
     [1] = {
         type = "About",
         title = "¿Que es MySQL?",
-        description = "MySQL es un programa<br>cachai?"
+        description = [[
+
+]]
     },
 
     [2] = {

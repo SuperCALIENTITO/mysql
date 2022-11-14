@@ -58,10 +58,22 @@ function mysql.main()
 
                     html = html .. htmlLua.uList("list")
 
-                    for index, aTbl in ipairs(tbl["content"]) do
+                    if type(tbl["content"][1]) == "table" then
 
-                        html = html .. htmlLua.list(aTbl[1] .. " - " .. aTbl[2])
+                        for index, aTbl in ipairs(tbl["content"]) do
+    
+                            html = html .. htmlLua.list(aTbl[1] .. " - " .. aTbl[2])
+    
+                        end
 
+                    else
+
+                        for index, aTbl in ipairs(tbl["content"]) do
+    
+                            html = html .. htmlLua.list(aTbl)
+    
+                        end
+                        
                     end
 
                     html = html .. htmlLua.uListEnd()
