@@ -4,6 +4,7 @@
     --bgr3: rgb(6, 35, 91);
     --bgr4: rgb(5, 40, 111);
     --white: rgb(181, 181, 181);
+    --console1: rgb(0, 0, 0);
 }
 
 @font-face {
@@ -55,6 +56,14 @@ body {
 
 .subtitle {
     font-size: large;
+}
+
+.example {
+    background-color: var(--console1);
+    border-radius: 2px;
+
+    padding: 0.2em;
+    font-family: "Courier New";
 }
 
 .line {
