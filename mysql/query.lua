@@ -1,8 +1,8 @@
 return {
     [1] = {
         type = "About",
-        title = "¿Que es Query?",
-        description = "Query es la funcion principal de MySQL"
+        title = "¿Que es MySQL?",
+        description = "MySQL es un programa<br>cachai?"
     },
 
     [2] = {

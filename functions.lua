@@ -73,11 +73,11 @@ end
 htmlLua = {}
 
 function htmlLua.Title(s, class)
-    return class and "    <h1 class=\"" .. class .. "\">" .. s .. "</h1>\n" or "    <h1>" .. s .. "</h1>\n"
+    return class and "    <div class=\"title " .. class .. "\">" .. s .. "</div>\n" or "    <div class=\"title\">" .. s .. "</div>\n"
 end
 
 function htmlLua.subTitle(s, class)
-    return class and "    <h2 class=\"" .. class .. "\">\n        " .. s .. "\n    </h2>\n" or "    <h2>\n        " .. s .. "\n    </h2>\n"
+    return class and "    <div class=\"subtitle " .. class .. "\">\n        " .. s .. "\n    </div>\n" or "    <div class=\"subtitle\">" .. s .. "</div>\n"
 end
 
 function htmlLua.list(s, class)

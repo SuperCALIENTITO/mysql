@@ -28,7 +28,7 @@ function mysql.main()
 
                 if tType == "About" then
 
-                    html = html .. htmlLua.Title(tbl["title"], "title")
+                    html = html .. htmlLua.Title(tbl["title"])
 
                     html = html .. htmlLua.subTitle(tbl["description"])
 
@@ -36,7 +36,7 @@ function mysql.main()
 
                 elseif tType == "Example"  then
 
-                    html = html .. htmlLua.Title(tbl["title"], "title")
+                    html = html .. htmlLua.Title(tbl["title"])
 
                     for index, aTbl in ipairs(tbl["content"]) do
 
@@ -50,7 +50,7 @@ function mysql.main()
 
                 elseif tType == "SeeAlso" then
 
-                    html = html .. htmlLua.Title(tbl["title"], "title")
+                    html = html .. htmlLua.Title(tbl["title"])
 
                     html = html .. "\n    <ul>\n"
 

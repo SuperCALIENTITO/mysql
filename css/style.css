@@ -1,6 +1,8 @@
 :root {
     --bgr1: rgb(3, 19, 48);
     --bgr2: rgb(4, 28, 72);
+    --bgr3: rgb(6, 35, 91);
+    --bgr4: rgb(5, 40, 111);
     --white: rgb(181, 181, 181);
 }
 
@@ -25,11 +27,40 @@ body {
 	background-size: 100% 100%;
 }
 
+.title {
+	background-color: var(--bgr1);
+
+    
+    background-image: linear-gradient(
+        var(--bgr1),
+        var(--bgr1),
+        var(--bgr2),
+        var(--bgr3),
+        var(--bgr1)
+    );
+
+    border-radius: 8px;
+    border-style: solid;
+    border-color: var(--white);
+    border-width: 3px;
+
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+
+    font-size: xx-large;
+    margin-bottom: 1em;
+}
+
 .line {
     height: 4px;
     background-color: #E6E6E6;
     width: 100%;
-    margin: 3 auto;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
     background-image: -webkit-gradient( linear, left bottom, right bottom,
         color-stop(0.1, var(--bgr2)),
         color-stop(0.5, var(--white)),
@@ -41,8 +72,9 @@ body {
 	background-color: var(--bgr2);
     border-radius: 8px;
     float: left;
-    width: 66.66%;
-    padding-left:4em;
+    width: 63%;
+    padding-left: 4em;
+    padding-right: 4em;
     padding-top: 2em;
     padding-bottom: 2em;
 
@@ -58,6 +90,6 @@ body {
 
 @media screen and (max-width: 800px) {
     .bodyLayout {
-      width: 90%;
+      width: calc(100% - 8em);
     }
   }
