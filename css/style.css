@@ -1,0 +1,48 @@
+@font-face {
+	font-family: 'OswaldAlt';
+	src: url("../fonts/Oswald-Light.ttf");
+}
+
+* {
+	font-family: 'OswaldAlt', Oswald, sans-serif;
+	font-weight: 32;
+	color: white;
+	cursor: default;
+}
+
+body {
+    background-image: url("../img/background.png") 100%;
+	background-color: rgb(3, 19, 48);
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+hr {
+    background: linear-gradient(#777777, #ffffff, #777777);
+    width: 70%;
+    margin: auto;
+}
+
+.bodyLayout {
+	background-color: rgb(4, 28, 72);
+    border-radius: 8px;
+    float: left;
+    width: 66.66%;
+    padding-left:4em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .bodyLayout {
+      width: 90%;
+    }
+  }

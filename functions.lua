@@ -79,3 +79,15 @@ end
 function htmlLua.subTitle(s, class)
     return class and "    <h2 class=\"" .. class .. "\">\n        " .. s .. "\n    </h2>\n" or "    <h2>\n        " .. s .. "\n    </h2>\n"
 end
+
+function htmlLua.list(s, class)
+    return class and "        <li class= \"" .. class .. "\">" .. s .. "</li>\n" or "        <li>" .. s .. "</li>\n"
+end
+
+function htmlLua.br(class)
+    return class and "\n    <br class=\"" .. class .. "\">\n\n" or "\n    <br>\n\n"
+end
+
+function htmlLua.breakLine(class)
+    return class and "\n    <hr class=\"" .. class .. "\">\n\n" or ""
+end

@@ -7,14 +7,19 @@ return {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Configuracion Base -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <title> MySQL - ]],
 
     ["head2"] = [[</title>
 </head>
 <body>
+
+<div class="bodyLayout">
+
 ]],
     ["end"] = [[
+</div>
+
 </body>
 </html>]]
 }

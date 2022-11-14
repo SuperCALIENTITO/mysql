@@ -8,8 +8,10 @@ return {
     [2] = {
         type = "Example",
         title = "Ejemplos",
-        example = "SELECT * FROM Clientes;",
-        output = "Tabla con la informacion de todos los clientes"
+        content = {
+            [1] = { "SELECT * FROM Clientes;", "Tabla con la informacion de todos los clientes" },
+            [2] = { "SELECT SYSDATE FROM dual;", "Nos muestra la fecha actual"}
+        },
     },
 
     [3] = {
