@@ -1,6 +1,7 @@
 :root {
     --bgr1: rgb(3, 19, 48);
     --bgr2: rgb(4, 28, 72);
+    --bgr2_alt: rgba(0, 0, 0, 0);
     --bgr3: rgb(6, 35, 91);
     --bgr4: rgb(5, 40, 111);
     --white: rgb(181, 181, 181);
@@ -55,7 +56,7 @@ body {
     margin-bottom: 1em;
 }
 
-.subtitle {
+.subtitle, ul li {
     font-size: 24px;
 }
 
@@ -85,8 +86,8 @@ body {
     height: 4px;
     background-color: #E6E6E6;
     width: 100%;
-    margin-top: 2em;
-    margin-bottom: 1em;
+    margin-top: 3em;
+    margin-bottom: 1.8em;
     margin-left: auto;
     margin-right: auto;
     background-image: -webkit-gradient( linear, left bottom, right bottom,
@@ -97,10 +98,15 @@ body {
 }
 
 .bodyLayout {
-	background-color: var(--bgr2);
+    background-image: -webkit-gradient( linear, left bottom, right bottom,
+        color-stop(0.1, var(--bgr2)),
+        color-stop(0.2, var(--bgr3)),
+        color-stop(0.8, var(--bgr3)),
+        color-stop(0.9, var(--bgr2))
+    );
     border-radius: 8px;
     float: left;
-    width: calc(100% - 8em * 2.5);
+    width: calc(100% - 9em * 2.5);
     padding-left: 4em;
     padding-right: 4em;
     padding-top: 2em;
@@ -114,7 +120,7 @@ body {
 	background-color: var(--bgr2);
     border-radius: 8px;
     float: right;
-    width: 9em;
+    width: 12em;
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 1em;

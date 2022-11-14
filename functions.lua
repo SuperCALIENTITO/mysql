@@ -81,11 +81,11 @@ function htmlLua.subTitle(s, class)
 end
 
 function htmlLua.uList(class)
-    return class and "\n    <ul class=\"" .. class .. "\">\n\n" or "\n    <ul>\n\n"
+    return class and "\n    <ul class=\"" .. class .. "\">\n" or "\n    <ul>\n"
 end
 
 function htmlLua.uListEnd()
-    return "    <ul>\n"
+    return "    </ul>\n"
 end
 
 function htmlLua.list(s, class)
@@ -97,5 +97,5 @@ function htmlLua.br(class)
 end
 
 function htmlLua.breakLine()
-    return "\n    <div class=\"line\"></div>\n\n" or ""
+    return "\n    <div class=\"line\"></div>\n\n"
 end

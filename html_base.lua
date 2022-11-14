@@ -13,15 +13,11 @@ return {
     ["head2"] = [[</title>
 </head>
 <body>
-
 <div class="bodyLayout">
 
 ]],
-    ["head2"] = [[
-</div>
-
-]],
-    ["footer"] = [[
+    ["navLayout"] = [[
+<div class="navLayout"></div>
 ]],
 
     ["end"] = [[

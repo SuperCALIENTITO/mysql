@@ -11,6 +11,8 @@ function mysql.main()
 
     local count = 1
     
+    local tbl = {}
+
     local base = require("html_base")
 
     for files in io.popen("DIR " .. mysql["folder"] .. " /aa /B"):lines() do
@@ -18,6 +20,8 @@ function mysql.main()
         if string.EndsWith(files, ".lua") then
 
             local fileName = string.sub(files, 0, -5)
+
+            table.insert(tbl, fileName)
 
             local a = require(mysql["folder"] .. "." .. fileName)
 
@@ -64,12 +68,11 @@ function mysql.main()
 
                     html = html .. htmlLua.breakLine()
 
-                    html = html .. "<br>\n"
-
                 end
+
             end
 
-            html = html .. base["head2"]
+            html = html .. "</div>\n\n" .. base["navLayout"]
 
             local tFile = io.open("html/" .. fileName .. ".html", "w")
             tFile:write(html)
