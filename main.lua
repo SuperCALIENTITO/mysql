@@ -52,7 +52,7 @@ function mysql.main()
 
                     html = html .. htmlLua.Title(tbl["title"])
 
-                    html = html .. "\n    <ul>\n"
+                    html = html .. htmlLua.uList("list")
 
                     for index, aTbl in ipairs(tbl["content"]) do
 
@@ -60,7 +60,7 @@ function mysql.main()
 
                     end
 
-                    html = html .. "    </ul>\n"
+                    html = html .. htmlLua.uListEnd()
 
                     html = html .. htmlLua.breakLine()
 
@@ -69,7 +69,7 @@ function mysql.main()
                 end
             end
 
-            html = html .. base["end"]
+            html = html .. base["head2"]
 
             local tFile = io.open("html/" .. fileName .. ".html", "w")
             tFile:write(html)

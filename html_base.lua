@@ -17,8 +17,14 @@ return {
 <div class="bodyLayout">
 
 ]],
-    ["end"] = [[
+    ["head2"] = [[
 </div>
+
+]],
+    ["footer"] = [[
+]],
+
+    ["end"] = [[
 
 </body>
 </html>]]
