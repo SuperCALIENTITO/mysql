@@ -1,3 +1,9 @@
+:root {
+    --bgr1: rgb(3, 19, 48);
+    --bgr2: rgb(4, 28, 72);
+    --white: rgb(181, 181, 181);
+}
+
 @font-face {
 	font-family: 'OswaldAlt';
 	src: url("../fonts/Oswald-Light.ttf");
@@ -12,27 +18,36 @@
 
 body {
     background-image: url("../img/background.png") 100%;
-	background-color: rgb(3, 19, 48);
+	background-color: var(--bgr1);
 	background-position: center center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
 
-hr {
-    background: linear-gradient(#777777, #ffffff, #777777);
-    width: 70%;
-    margin: auto;
+.line {
+    height: 4px;
+    background-color: #E6E6E6;
+    width: 100%;
+    margin: 3 auto;
+    background-image: -webkit-gradient( linear, left bottom, right bottom,
+        color-stop(0.1, var(--bgr2)),
+        color-stop(0.5, var(--white)),
+        color-stop(0.9, var(--bgr2))
+    );
 }
 
 .bodyLayout {
-	background-color: rgb(4, 28, 72);
+	background-color: var(--bgr2);
     border-radius: 8px;
     float: left;
     width: 66.66%;
     padding-left:4em;
     padding-top: 2em;
     padding-bottom: 2em;
+
+    margin-top: 1em;
+    margin-bottom:1.5em;
 }
 
 .row::after {
@@ -41,7 +56,7 @@ hr {
     clear: both;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .bodyLayout {
       width: 90%;
     }

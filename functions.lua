@@ -88,6 +88,6 @@ function htmlLua.br(class)
     return class and "\n    <br class=\"" .. class .. "\">\n\n" or "\n    <br>\n\n"
 end
 
-function htmlLua.breakLine(class)
-    return class and "\n    <hr class=\"" .. class .. "\">\n\n" or ""
+function htmlLua.breakLine()
+    return "\n    <div class=\"line\"></div>\n\n" or ""
 end

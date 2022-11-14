@@ -32,7 +32,7 @@ function mysql.main()
 
                     html = html .. htmlLua.subTitle(tbl["description"])
 
-                    html = html .. htmlLua.breakLine("line")
+                    html = html .. htmlLua.breakLine()
 
                 elseif tType == "Example"  then
 
@@ -46,7 +46,7 @@ function mysql.main()
 
                     end
 
-                    html = html .. htmlLua.breakLine("line")
+                    html = html .. htmlLua.breakLine()
 
                 elseif tType == "SeeAlso" then
 
@@ -62,7 +62,7 @@ function mysql.main()
 
                     html = html .. "    </ul>\n"
 
-                    html = html .. htmlLua.breakLine("line")
+                    html = html .. htmlLua.breakLine()
 
                     html = html .. "<br>\n"
 
