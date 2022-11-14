@@ -66,15 +66,16 @@ function string.EndsWith( s, pos )
     return pos == "" or string.sub( s, -string.len( pos ) ) == pos
 end
 
-function dump(o)
-    if type(o) == 'table' then
-       local s = '{ '
-       for k,v in pairs(o) do
-          if type(k) ~= 'number' then k = '"'..k..'"' end
-          s = s .. '['..k..'] = ' .. dump(v) .. ','
-       end
-       return s .. '} '
-    else
-       return tostring(o)
-    end
- end
+ function FTU(s)
+    return (s:gsub("^%l", string.upper))
+end
+
+htmlLua = {}
+
+function htmlLua.Title(s, class)
+    return class and "    <h1 class=\"" .. class .. "\">" .. s .. "</h1>\n" or "    <h1>" .. s .. "</h1>\n"
+end
+
+function htmlLua.subTitle(s, class)
+    return class and "    <h2 class=\"" .. class .. "\">\n        " .. s .. "\n    </h2>\n" or "    <h2>\n        " .. s .. "\n    </h2>\n"
+end

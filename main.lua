@@ -5,49 +5,54 @@ mysql = {
     ["folder"] = "mysql"
 }
 
-require("gmod")
+require("functions")
 
 function mysql.main()
 
     local count = 1
 
     for files in io.popen("DIR " .. mysql["folder"] .. " /aa /B"):lines() do
+
         if string.EndsWith(files, ".lua") then
 
             local fileName = string.sub(files, 0, -5)
 
             local a = require(mysql["folder"] .. "." .. fileName)
+            local base = require("html_base")
+
+            local html = base["head1"] .. FTU(fileName) .. base["head2"]
 
             for k, tbl in ipairs(a) do
                 local tType = tbl["type"]
 
                 if tType == "About" then
 
-                    print(tbl["title"], tbl["description"])
+                    html = html .. htmlLua.Title(tbl["title"], "clase")
 
-                    print"\n"
+                    html = html .. htmlLua.subTitle(tbl["description"])
+
+                    html = html .. "<br>\n"
 
                 elseif tType == "Example"  then
 
-                    print("Ejemplos: ", tbl["example"])
+                    html = html .. htmlLua.Title(tbl["title"])
 
-                    print"\n"
+                    html = html .. htmlLua.subTitle(tbl["example"], "example")
+
+                    html = html .. htmlLua.subTitle(tbl["output"], "output")
 
                 elseif tType == "SeeAlso" then
 
-                    print("Vease tambien: ")
-
                     for index, aTbl in ipairs(tbl["content"]) do
-                        
-                        print(aTbl[1] .. "\t\t" .. aTbl[2])
 
                     end
-
-                    print"\n"
 
                 end
             end
 
+            html = html .. base["end"]
+
+            print(html)
 
         end
     end
