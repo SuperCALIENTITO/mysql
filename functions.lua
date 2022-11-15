@@ -121,20 +121,21 @@ function htmlLua.tableHead(tbl)
 end
 
 function htmlLua.tableData(tbl)
-    local text = "    <tr>\n"
+    local text = ""
 
     for _, data in ipairs(tbl) do
+
+        text = text .. "    <tr>\n"
         
-        for _, subData in pairs(data)
+        for _, subData in pairs(data) do
 
+            text = text .. "        <td>" .. subData .. "</td>\n"
+
+        end
+
+        text = text .. "    </tr>\n"
 
     end
-
-    for _, data in ipairs(tbl) do
-        text = text .. "        <td>" .. data .. "</th>\n"
-    end
-
-    text = text .. "    <tr>\n"
 
     return text
     

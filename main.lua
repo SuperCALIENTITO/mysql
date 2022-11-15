@@ -102,21 +102,21 @@ function mysql.main()
 
                     html = html .. htmlLua.subTitle(tbl["input"], "example")
 
-                    html = html .. htmlLua.tableStart("table")
+                    html = html .. htmlLua.tableStart("example table")
 
-                    local fTable = {}
-                    local mTable = {}
+                    local dTable = {}
 
                     for _, v in ipairs(tbl["output"]) do
-                        table.insert(fTable, v[1])
-                        table.insert(mTable, v[2])
+                        table.insert(dTable, v)
                     end
 
-                    html = html .. htmlLua.tableHead(fTable)
+                    html = html .. htmlLua.tableHead(tbl["output"]["head"])
 
-                    html = html .. htmlLua.tableData(mTable)
+                    html = html .. htmlLua.tableData(dTable)
 
                     html = html .. htmlLua.tableEnd()
+
+                    html = html .. htmlLua.breakLine()
 
                 end
 

@@ -14,10 +14,10 @@ Los datos que se devuelven/entregan se almacenan en una tabla de resultados, den
         description = "Testing",
         input = "SELECT * FROM Clientes;",
         output = {
-            [1] = { "ID",       { "1",          "2",        "3",        "4",        "5" } },
-            [2] = { "Nombre",   { "Arman",      "Vicente",  "Luis",     "Mauricia", "Roberto" } },
-            [3] = { "Apellido", { "Contreras",  "Zapata",   "Salas",    "Torres",   "Valenzuela" } },
-            [4] = { "Pais",     { "Peru",       "Argentina","Bolivia",  "Chile",    "Chile" } }
+            ["head"] = {"ID",       "Nombre",       "Apellido",     "Pais" },
+            [1] = {     "1",        "Arman",        "Luis",         "Rberto" },
+            [2] = {     "2",        "Vicente",      "Salas",        "Torres" },
+            [3] = {     "3",        "Argentina",    "Bolivia",      "Chile" }
         }
     }
 }
