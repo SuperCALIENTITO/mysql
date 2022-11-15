@@ -123,7 +123,12 @@ end
 function htmlLua.tableData(tbl)
     local text = "    <tr>\n"
 
-    print(tbl[1])
+    for _, data in ipairs(tbl) do
+        
+        for _, subData in pairs(data)
+
+
+    end
 
     for _, data in ipairs(tbl) do
         text = text .. "        <td>" .. data .. "</th>\n"
