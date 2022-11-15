@@ -25,7 +25,17 @@ function mysql.main()
 
             local a = require(mysql["folder"] .. "." .. fileName)
 
-            local html = base["head1"] .. FTU(fileName) .. base["head2"]
+            local html = ""
+
+            if a["name"] then
+
+                html = base["head1"] .. a["name"] .. base["head2"]
+
+            else
+
+                html = base["head1"] .. FTU(fileName) .. base["head2"]
+                
+            end
 
             for k, tbl in ipairs(a) do
                 local tType = tbl["type"]

@@ -1,4 +1,6 @@
 return {
+    ["name"] = "Lo basico",
+
     [1] = {
         type = "About",
         title = "¿Que es MySQL?",
