@@ -90,6 +90,34 @@ function mysql.main()
 
                     html = html .. htmlLua.breakLine()
 
+                elseif tType == "Table" then
+
+                    html = html .. htmlLua.Title(tbl["title"])
+
+                    if tbl["description"] then
+
+                        html = html .. htmlLua.subTitle(tbl["description"])
+                        
+                    end
+
+                    html = html .. htmlLua.subTitle(tbl["input"], "example")
+
+                    html = html .. htmlLua.tableStart("table")
+
+                    local fTable = {}
+                    local mTable = {}
+
+                    for _, v in ipairs(tbl["output"]) do
+                        table.insert(fTable, v[1])
+                        table.insert(mTable, v[2])
+                    end
+
+                    html = html .. htmlLua.tableHead(fTable)
+
+                    html = html .. htmlLua.tableData(mTable)
+
+                    html = html .. htmlLua.tableEnd()
+
                 end
 
             end

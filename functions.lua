@@ -99,3 +99,36 @@ end
 function htmlLua.breakLine()
     return "\n    <div class=\"line\"></div>\n\n"
 end
+
+function htmlLua.tableStart(class)
+    return class and "    <table class=\"" .. class .. "\">\n" or "    <table>\n"
+end
+
+function htmlLua.tableEnd()
+    return "    </table>\n"
+end
+
+function htmlLua.tableHead(tbl)
+    local text = "    <tr>\n"
+
+    for _, data in ipairs(tbl) do
+        text = text .. "        <th>" .. data .. "</th>\n"
+    end
+
+    text = text .. "    <tr>\n"
+
+    return text
+end
+
+function htmlLua.tableData(tbl)
+    local text = "    <tr>\n"
+
+    for _, data in ipairs(tbl) do
+        text = text .. "        <td>" .. data .. "</th>\n"
+    end
+
+    text = text .. "    <tr>\n"
+
+    return text
+    
+end
