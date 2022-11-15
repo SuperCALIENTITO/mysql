@@ -3,7 +3,7 @@ return {
 
     [1] = {
         type = "About",
-        title = "La instrucción SELECT de MySQL",
+        title = "La instrucción SELECT",
         description = [[La instrucción <a class="example">SELECT</a> se utiliza para seleccionar datos de una base de datos.
 Los datos que se devuelven/entregan se almacenan en una tabla de resultados, denominada conjunto de resultados.]]
     },
