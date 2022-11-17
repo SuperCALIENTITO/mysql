@@ -13,6 +13,11 @@
 	src: url("../fonts/Oswald-Light.ttf");
 }
 
+@font-face {
+	font-family: 'CourierNewItalic';
+	src: url("../fonts/courier_new_italic.ttf");
+}
+
 * {
 	font-family: 'OswaldAlt', Oswald, sans-serif;
 	font-weight: 32;
@@ -88,6 +93,10 @@ th, td {
     font-family: "Courier New";
 
     width: fit-content;
+}
+
+i {
+    font-family: "CourierNewItalic";
 }
 
 .terminal {
