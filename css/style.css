@@ -27,7 +27,6 @@
 }
 
 body {
-    background-image: url("../img/background.png") 100%;
 	background-color: var(--bgr1);
 	background-position: center center;
 	background-attachment: fixed;
