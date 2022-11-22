@@ -34,7 +34,7 @@ return {
         <T>usuarios.nombre</a><br><br>
         De esta manera, MySQL puede determinar de qué tabla se trata el campo.<br><br>
 
-        Nota: Esto tambien funciona con comillas.<br>
+        Nota: Lo anterior tambien puede ser utilizado con comillas.<br>
         <T>"usuarios"."nombre"</a>
         ]]
     }
