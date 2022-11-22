@@ -34,10 +34,10 @@ Por ejemplo, el campo <T>nombre_de_usuario</a> puede contener el valor <T>jsmith
 Los datos en una tabla se organizan en filas. Cada fila contiene un conjunto de datos relacionados.<br>
 Por ejemplo, una fila en la tabla de usuarios puede contener los valores <T>jsmith</a>, <T>123456</a>, <T>jsmith@example.com</a> y <T>2015-01-01</a>.<br><br>
 
-Las tablas se relacionan entre sí mediante claves. <T>FOREIGN KEY</a><br>
+Las tablas se relacionan entre sí mediante claves foráneas. <T>FOREIGN KEY</a><br>
 Una clave es un campo en una tabla que se utiliza para enlazar datos en otras tablas.<br><br>
 
-Por ejemplo, la tabla de usuarios puede tener una clave que se relaciona con la tabla de mensajes.<br>
+Por ejemplo, la tabla de usuarios puede tener una clave foránea que se relaciona con la tabla de mensajes.<br>
 Esto significa que se puede buscar un usuario en la tabla de usuarios y, a continuación, encontrar todos los mensajes que haya enviado ese usuario en la tabla de mensajes.
         ]]
     },

@@ -56,7 +56,7 @@ function mysql.main()
 
                         html = html .. htmlLua.subTitle(aTbl[1], "example")
                         
-                        html = html .. htmlLua.subTitle(aTbl[2], "output")
+                        html = html .. htmlLua.subTitle(aTbl[2], "output"):gsub("<T>", "<a class=\"example\">")
 
                     end
 
