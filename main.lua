@@ -44,7 +44,7 @@ function mysql.main()
 
                     html = html .. htmlLua.Title(tbl["title"])
 
-                    html = html .. htmlLua.subTitle(tbl["description"])
+                    html = html .. htmlLua.subTitle(tbl["description"]):gsub("<T>", "<a class=\"example\">")
 
                     html = html .. htmlLua.breakLine()
 
