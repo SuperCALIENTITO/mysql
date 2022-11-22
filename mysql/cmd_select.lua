@@ -27,8 +27,8 @@ return {
         type = "ExampleLong",
         title = "SELECT con WHERE y ORDER BY",
         description = [[
-        El comando SELECT puede utilizarse también con la cláusula ORDER BY para especificar el orden en el que se deben recuperar los registros.<br>
-        La sintaxis del comando SELECT es la siguiente:
+        El comando <T>SELECT</a> puede utilizarse también con la cláusula <T>ORDER BY</a> para especificar el orden en el que se deben recuperar los registros.<br>
+        La sintaxis del comando <T>SELECT</a> es la siguiente:
         ]],
         example = [[
         SELECT<br>
@@ -44,8 +44,8 @@ return {
         type = "ExampleLong",
         title = "SELECT con WHERE y LIMIT",
         description = [[
-            El comando SELECT también se puede utilizar con la cláusula LIMIT para especificar el número máximo de registros que se deben recuperar.<br>
-            La sintaxis del comando SELECT con la cláusula LIMIT es la siguiente:]],
+            El comando <T>SELECT</a> también se puede utilizar con la cláusula <T>LIMIT</a> para especificar el número máximo de registros que se deben recuperar.<br>
+            La sintaxis del comando <T>SELECT</a> con la cláusula <T>LIMIT</a> es la siguiente:]],
         example = [[
         SELECT<br>
         <J>     [campo1, campo2, ...]<br>
