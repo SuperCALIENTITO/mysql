@@ -18,6 +18,20 @@ return {
     },
 
     [3] = {
+        type = "ExampleLong",
+        title = "Ejemplo de comandos con Sintaxis (Forma facil de leer)",
+        description = "Este es otro metodo que se utiliza para que el codigo sea mas sencillo de leer y comprender",
+        example = [[
+        SELECT<br>
+        <J>     [campo1, campo2, ...]<br>
+        FROM<br>
+        <J>     [nombre de la tabla]<br>
+        WHERE<br>
+        <J>     [condición];
+        ]]
+    },
+
+    [4] = {
         type = "About",
         title = "Algunas dudas",
         description = [[

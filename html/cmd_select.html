@@ -13,25 +13,54 @@
 <div class="bodyLayout">
 
     <div class="title">La instrucción SELECT</div>
-    <div class="subtitle">La instrucción <a class="example">SELECT</a> se utiliza para seleccionar datos de una base de datos.
-Los datos que se devuelven/entregan se almacenan en una tabla de resultados, denominada conjunto de resultados.</div>
+    <div class="subtitle">        El comando <a class="example">SELECT</a> de MySQL es un comando utilizado para recuperar datos de una base de datos.<br>
+        Este comando se utiliza generalmente junto con la cláusula <a class="example">WHERE</a> para especificar qué registros se deben recuperar.</div>
 
     <div class="line"></div>
 
-    <div class="title">Ejemplos de Escritura</div>
+    <div class="title">SELECT con WHERE</div>
+    <div class="subtitle">La sintaxis del comando SELECT es la siguiente:</div>
     <div class="subtitle example">
-        SELECT <i>columna1</i>, <i>columna2</i>, ...<br>FROM tabla_datos;
+                SELECT<br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp     [campo1, campo2, ...]<br>
+        FROM<br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp     [nombre de la tabla]<br>
+        WHERE<br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp     [condición];
+        
         <div class="terminal"></div>
     </div>
-    <div class="subtitle output">
-        Selecciona las columnas <a class="example">columna1</a> y <a class="example">columna2</a> de datos de la tabla <a class="example">tabla_datos</a>
-    </div>
+
+    <div class="line"></div>
+
+    <div class="title">SELECT con WHERE y ORDER BY</div>
+    <div class="subtitle">        El comando SELECT puede utilizarse también con la cláusula ORDER BY para especificar el orden en el que se deben recuperar los registros.<br>
+        La sintaxis del comando SELECT es la siguiente:
+        </div>
     <div class="subtitle example">
-        SELECT * FROM tabla;
+                SELECT<br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp     [campo1, campo2, ...]<br>
+        FROM<br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp     [nombre de la tabla]<br>
+        WHERE<br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp     [condición];
+        
         <div class="terminal"></div>
     </div>
-    <div class="subtitle output">
-        Selecciona todas las columnas dentro de la tabla <a class="example">tabla_datos</a>
+
+    <div class="line"></div>
+
+    <div class="title">SELECT con WHERE</div>
+    <div class="subtitle">La sintaxis del comando SELECT es la siguiente:</div>
+    <div class="subtitle example">
+                SELECT<br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp     [campo1, campo2, ...]<br>
+        FROM<br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp     [nombre de la tabla]<br>
+        WHERE<br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp     [condición];
+        
+        <div class="terminal"></div>
     </div>
 
     <div class="line"></div>

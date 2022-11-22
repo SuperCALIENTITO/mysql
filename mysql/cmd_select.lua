@@ -4,20 +4,59 @@ return {
     [1] = {
         type = "About",
         title = "La instrucción SELECT",
-        description = [[La instrucción <a class="example">SELECT</a> se utiliza para seleccionar datos de una base de datos.
-Los datos que se devuelven/entregan se almacenan en una tabla de resultados, denominada conjunto de resultados.]]
+        description = [[
+        El comando <T>SELECT</a> de MySQL es un comando utilizado para recuperar datos de una base de datos.<br>
+        Este comando se utiliza generalmente junto con la cláusula <T>WHERE</a> para especificar qué registros se deben recuperar.]]
     },
 
     [2] = {
-        type = "Example",
-        title = "Ejemplos de Escritura",
-        content = {
-            [1] = { "SELECT <i>columna1</i>, <i>columna2</i>, ...<br>FROM tabla_datos;", [[Selecciona las columnas <a class="example">columna1</a> y <a class="example">columna2</a> de datos de la tabla <a class="example">tabla_datos</a>]] },
-            [2] = { "SELECT * FROM tabla;", [[Selecciona todas las columnas dentro de la tabla <a class="example">tabla_datos</a>]]}
-        }
+        type = "ExampleLong",
+        title = "SELECT con WHERE",
+        description = "La sintaxis del comando SELECT es la siguiente:",
+        example = [[
+        SELECT<br>
+        <J>     [campo1, campo2, ...]<br>
+        FROM<br>
+        <J>     [nombre de la tabla]<br>
+        WHERE<br>
+        <J>     [condición];
+        ]]
     },
 
     [3] = {
+        type = "ExampleLong",
+        title = "SELECT con WHERE y ORDER BY",
+        description = [[
+        El comando SELECT puede utilizarse también con la cláusula ORDER BY para especificar el orden en el que se deben recuperar los registros.<br>
+        La sintaxis del comando SELECT es la siguiente:
+        ]],
+        example = [[
+        SELECT<br>
+        <J>     [campo1, campo2, ...]<br>
+        FROM<br>
+        <J>     [nombre de la tabla]<br>
+        WHERE<br>
+        <J>     [condición];
+        ]]
+    },
+
+    [4] = {
+        type = "ExampleLong",
+        title = "SELECT con WHERE y LIMIT",
+        description = [[
+            El comando SELECT también se puede utilizar con la cláusula LIMIT para especificar el número máximo de registros que se deben recuperar.<br>
+            La sintaxis del comando SELECT con la cláusula LIMIT es la siguiente:]],
+        example = [[
+        SELECT<br>
+        <J>     [campo1, campo2, ...]<br>
+        FROM<br>
+        <J>     [nombre de la tabla]<br>
+        LIMIT<br>
+        <J>     [número máximo de registros];
+        ]]
+    },
+
+    [5] = {
         type = "Table",
         title = "Ejemplos",
         description = [[Con el comando <a class="example">SELECT</a> se puede seleccionar todos los datos de una tabla de la siguiente forma.]],

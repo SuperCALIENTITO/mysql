@@ -48,7 +48,7 @@ function mysql.main()
 
                     html = html .. htmlLua.breakLine()
 
-                elseif tType == "Example"  then
+                elseif tType == "Example" then
 
                     html = html .. htmlLua.Title(tbl["title"])
 
@@ -59,6 +59,16 @@ function mysql.main()
                         html = html .. htmlLua.subTitle(aTbl[2], "output"):gsub("<T>", "<a class=\"example\">")
 
                     end
+
+                    html = html .. htmlLua.breakLine()
+
+                elseif tType == "ExampleLong" then
+
+                    html = html .. htmlLua.Title(tbl["title"])
+
+                    html = html .. htmlLua.subTitle(tbl["description"])
+
+                    html = html .. htmlLua.subTitle(tbl["example"], "example"):gsub("<S>", "&nbsp"):gsub("<J>", "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp")
 
                     html = html .. htmlLua.breakLine()
 
