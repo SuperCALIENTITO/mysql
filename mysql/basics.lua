@@ -4,7 +4,12 @@ return {
     [1] = {
         type = "About",
         title = "¿Que es MySQL?",
-        description = [[MySQL es un sistema de gestión de bases de datos relacionales, desarrollado bajo una licencia dual: Licencia pública general GNU y licencia comercial.]]
+        description = [[
+            MySQL es un sistema de gestión de base de datos relacional (RDBMS por sus siglas en inglés) que se utiliza para almacenar y
+            acceder a grandes cantidades de información de manera rápida y eficiente.<br>
+            Una base de datos es un conjunto de datos organizados de manera lógica y estructurada,
+            que se utiliza para almacenar y acceder a la información de manera sencilla y rápida.
+        ]]
     },
 
     [2] = {
@@ -43,6 +48,24 @@ Esto significa que se puede buscar un usuario en la tabla de usuarios y, a conti
     },
 
     [4] = {
+        type = "About",
+        title = "Conceptos básicos de MySQL",
+        description = [[
+            Algunos conceptos básicos en MySQL son:<br><br>
+
+            <b>Tablas</b>: una tabla es una estructura de datos que se utiliza para almacenar información en una base de datos.<br>
+            Cada tabla tiene un conjunto de campos, que son como columnas en una hoja de cálculo y<br>
+            contienen diferentes tipos de datos,como números, texto, fechas, etc.<br><br>
+
+            <b>Filas</b>: una fila es un conjunto de datos que se almacena en una tabla.<br>
+            Cada fila tiene un conjunto de valores, uno por cada campo de la tabla.<br>
+            Las filas se utilizan para almacenar los datos concretos que se quieren guardar en la base de datos.<br><br>
+
+
+        ]]
+    },
+
+    [5] = {
         type = "Example",
         title = "Ejemplos",
         content = {
@@ -51,7 +74,7 @@ Esto significa que se puede buscar un usuario en la tabla de usuarios y, a conti
         },
     },
 
-    [5] = {
+    [6] = {
         type = "SeeAlso",
         title = "Algunos comandos de interes",
         content = {

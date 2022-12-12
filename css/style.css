@@ -18,9 +18,14 @@
 	src: url("../fonts/courier_new_italic.ttf");
 }
 
+@font-face {
+    font-family: 'Roboto', sans-serif;;
+    src: uurl('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300;500&display=swap');
+}
+
 * {
-	font-family: 'OswaldAlt', Oswald, sans-serif;
-	font-weight: 32;
+	font-family: 'Roboto', Oswald, sans-serif;
+	font-weight: 300;
     font-size: large;
 	color: white;
 	cursor: default;
